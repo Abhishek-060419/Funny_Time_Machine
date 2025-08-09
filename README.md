@@ -7,7 +7,8 @@ Team Members:
  Member 2: Aditya M Manojkumar – College of Engineering Trivandrum
 
 Project Description
-ChronoScribe is a quirky web-based newsletter generator that “travels through time” to report
+RetroFuture Rumours 
+is a quirky web-based newsletter generator that “travels through time” to report
 bizarre, completely made-up historical events for any year the user enters. The site transforms a
 boring year input into an absurdly creative newsletter that no historian asked for, but everyone
 secretly needs.
