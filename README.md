@@ -1,7 +1,7 @@
 RetroFuture Rumours – The Time Machine Newsletter
 
 Basic Details
-Team Name: Quantum Quills
+Team Name: MadddCodersss
 Team Members:
  Team Lead: Abhishek V – College of Engineering Trivandrum
  Member 2: Aditya M Manojkumar – College of Engineering Trivandrum
