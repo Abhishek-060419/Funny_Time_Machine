@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+<body>
+    <div class="results-container">
+        <h1 class="result-title">Your Time Travel Result</h1>
+        
+        {% if sentence %}
+            <ul class="result-list">
+                {% for line in sentence %}
+                    <li class="result-item">{{ line }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p class="result-text">No results found. Please go back and try again.</p>
+        {% endif %}
+
+        <div class="back-button-container">
+            <a href="{{ url_for('index') }}" class="back-button">🔙 Back</a>
+        </div>
+    </div>
+</body>
+</html>

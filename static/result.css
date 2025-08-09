@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    background: url("https://steamuserimages-a.akamaihd.net/ugc/1803104304471976251/ED1F24003367B6B9040D9D9A7DD70341A03B417E/") center center no-repeat;
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container */
+.results-container {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(8px);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    text-align: center;
+    max-width: 800px;
+    width: 90%;
+    animation: fadeIn 0.8s ease-in-out;
+    position: relative;
+}
+
+/* Title */
+.result-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.2rem;
+    color: #00fff7;
+    margin-bottom: 20px;
+}
+
+/* Result text list */
+.result-list {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.result-item {
+    font-size: 1.2rem;
+    margin: 12px 0;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+/* Back button */
+.back-button-container {
+    margin-top: 30px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #00f5d4, #00bbf9);
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.back-button:hover {
+    background: linear-gradient(90deg, #00bbf9, #00f5d4);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}

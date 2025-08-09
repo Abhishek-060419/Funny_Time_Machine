@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>  
@@ -7,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Initial Page</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='initial.css') }}">
+        
+
 
 
     </head>
@@ -29,12 +29,11 @@
                         <option value="science">Science</option>
                         <option value="technology">Technology</option>
                     </select>
-                    <input type="number" name="year" placeholder="Enter year" required>
+                    <input type="number"  id="yearInput" name="year" placeholder="Enter year" required>
                     <button type="submit">Submit</button>
                 </div>
             </form>
 
-        </div>
-    </div>    
+        </div>   
     </body>
 </html>
