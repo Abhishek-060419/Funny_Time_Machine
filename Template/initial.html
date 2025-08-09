@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Initial Page</title>
+        <link rel="stylesheet" href="initial.css">
+
+    </head>
+    <body>
+    
+        <div class="newsletter-container" >
+            <h1 class="newsletter-title">Funny Time Travel</h1> 
+            <div style="margin-top:50px;">
+                <p>Time flies like an arrow; fruit flies like a banana.</p>
+                <br>
+                <p>Time travel is a concept that has fascinated humanity for centuries.</p>
+                <br>
+                <br>
+            </div>
+            <form action="{{url_for('generate')}}" method="POST">
+                <div class="input-container">
+                    <select name="topic" required>
+                        <option value="">Select Topic</option>
+                        <option value="history">History</option>
+                        <option value="science">Science</option>
+                        <option value="technology">Technology</option>
+                    </select>
+                    <input type="number" name="year" placeholder="Enter year" required>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+
+        </div>
+    </div>    
+    </body>
+</html>
+
+
