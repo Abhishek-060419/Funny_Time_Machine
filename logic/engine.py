@@ -12,7 +12,6 @@ famous_people = [
     "Bill Gates",
     "Mark Zuckerberg",
     "The King of Wakanda",
-    "The Sultan of Silicon Valley",
     "Professor Nebula",
     "Dr. Artemis",
     "Inventor Quark",
@@ -88,7 +87,7 @@ templates = [
 import random
 
 def generate_history(year, topic):
-    count = random.randint(3, 6)  # Number of sentences to generate
+    count = random.randint(2,5)  # Number of sentences to generate
     results = []  # List to hold all generated sentences
     
     for _ in range(count):
