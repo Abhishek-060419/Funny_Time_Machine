@@ -37,5 +37,12 @@
             </form>
 
         </div>   
+        <script>
+          const currentYear = new Date().getFullYear();
+          const yearInput = document.getElementById('yearInput');
+          yearInput.min = currentYear;
+          yearInput.max = 9999;
+          yearInput.placeholder = `Enter year (min ${currentYear}, max 9999)`;
+        </script>
     </body>
 </html>
