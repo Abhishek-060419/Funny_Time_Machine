@@ -76,7 +76,7 @@ weird_things = [
 
 
 templates = [
-    "In {year}, {person} {event}.",
+    " {person} {event}.",
     "The price of oxygen is {price}.",
     "An acre on {place} costs {price}.",
     "{extinct_species}.",
@@ -87,20 +87,23 @@ templates = [
 import random
 
 def generate_history(year, topic):
-    count = random.randint(2,5)  # Number of sentences to generate
-    results = []  # List to hold all generated sentences
-    
+    count = random.randint(2, 5)  # Number of sentences to generate
+    results = []
+
     for _ in range(count):
         if topic == "history":
-            template = "In {year}, {person} {event}."
+            template = " {person} {event}."
         elif topic == "science":
-            template = "Scientists invented {invention} in {year}."
+            template = "Scientists invented {invention}."
         elif topic == "technology":
-            template = "{person} launched {invention} in {year}."
+            template = "{person} launched {invention}."
+        elif topic == "random":
+            # Pick any template from the templates list
+            template = random.choice(templates)
         else:
-            template = "In {year}, something unusual happened but the world donot know what!."
+            template = "In {year}, something unusual happened but the world doesn't know what!."
 
-        # Prepare data for this iteration
+        # Prepare dynamic values
         data = {
             "year": year,
             "person": random.choice(famous_people),
@@ -112,10 +115,6 @@ def generate_history(year, topic):
             "weird_thing": random.choice(weird_things),
         }
 
-        # Format the sentence with the current template and data
-        sentence = template.format(**data)
-        
-        # Add the sentence to the results list
-        results.append(sentence)
+        results.append(template.format(**data))
 
-    return results  # Return the list of generated sentences
+    return results  
