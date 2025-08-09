@@ -33,3 +33,4 @@ o Python (Logic engine for randomised fake history)
  Frameworks:
 o Flask (Backend server, routing, and integration between HTML and Python logic)
 o Jinja2 (Templating to inject generated stories into HTML dynamically)
+oJavaScript (Small code snippet to control the user input)
