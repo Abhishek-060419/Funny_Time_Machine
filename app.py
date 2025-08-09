@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from Logic.engine import generate_history
+from logic.engine import generate_history
 
 app=Flask(__name__)
 
